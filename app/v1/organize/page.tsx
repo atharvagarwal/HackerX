@@ -109,7 +109,7 @@ const HackathonForm = () => {
       <div className="min-h-screen bg-gray-900 flex justify-center items-start lg:space-around m-12">
         <form
           onSubmit={handleSubmit}
-          className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md"
+          className="bg-gray-800 p-6 mt-12 rounded-lg shadow-lg w-full max-w-md"
         >
           <h1 className="text-2xl font-bold mb-4 text-white text-center">
             Create Hackathon
