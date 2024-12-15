@@ -1,8 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started (Local Development Setup)
+=> write cd /folder in terminal (folder containing your code)
 
-First, run the development server:
+=> npm install (write in terminal)
+
+=> create a database on mongodb atlas (using free tier) & get the connection url and store it in .env (Configure the db network access from anywhere ie 0.0.0.0/0)
+
+=> then create a account on cloudinary and store the api key , api secret and cloud name in .env
+
+=> also store nextauth_secret and nextauth_url keys in .env
+
+=> (Checkout sample .env file in the code on what keys are required)
+
+run the development server:
 
 ```bash
 npm run dev
@@ -28,6 +39,8 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+
 
 ## Deploy on Vercel
 
