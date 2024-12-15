@@ -24,7 +24,7 @@ export const POST = async (req: Request) => {
     if(!user){
         return NextResponse.json({ error: "ENTER EMAIL OF REGISTERED USER" }, { status: 400 });
     }
-    if(loggedInUser!==user){
+    if(loggedInUser!==user.email){
         return NextResponse.json({ error: "USE EMAIL OF A CORRECT USER" }, { status: 400 });
     }
     // Validate required fields
