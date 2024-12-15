@@ -73,17 +73,17 @@ export default function HackathonList() {
 
   if (hackathons.length === 0) {
     return (
+      
       <div className="flex items-center justify-center mt-24">
-        <FloatingNav navItems={navItems} />
         <button
           className="p-2 bg-purple-300 absolute top-2 right-5 rounded-md"
           onClick={() => {
-            signOut();
-            router.push("/");
+            signOut({ callbackUrl: '/' })
           }}
         >
           <p>Logout</p>
         </button>
+        <FloatingNav navItems={navItems} />
         <h1 className="text-xl text-red-600 font-medium">
           NO HACKATHONS REGISTERED
         </h1>
@@ -101,8 +101,7 @@ export default function HackathonList() {
       <button
         className="p-2 bg-purple-500"
         onClick={() => {
-          signOut();
-          router.push('/')
+          signOut({ callbackUrl: '/' })
         }}
       >
         <p className="text-white">Logout</p>
